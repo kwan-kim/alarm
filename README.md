@@ -4,7 +4,7 @@ Directory
 
 |- dist
 
-  ㄴbundle.js
+    ㄴbundle.js
   
 |- index.html
 
