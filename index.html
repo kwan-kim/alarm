@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="김관">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <title>김관-알람</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="currentTimeWrap">
+        <h1>현재시간</h1>
+        <div class="currentTime"></div>
+      </div>
+      <div class="alarmCreateWrap">
+        <h1>알람등록</h1>
+        <div class="clockModeWrap">
+          <span>시계모드 :</span>
+          <select name="clockMode">
+            <option value="normal" selected="selected">일반</option>
+            <option value="vibration">진동</option>
+            <option value="night">야간</option>
+          </select>
+          <span class="currentMode"></span>
+        </div>
+        <div class="setTimeWrap">
+          <span>시간설정 :</span>
+          <input type="text" name="setDay" placeholder="시간설정" />
+        </div>
+        <div class="vibrationModeWrap">
+          <span>알람모드 :</span>
+          <select name="alarmMode">
+            <option value="normal" selected="selected" >일반</option>
+            <option value="emergency">긴급</option>
+          </select>
+          <input type="text" name="setTime" placeholder="시간설정" />
+        </div>
+        <div class="message">
+          <span>내용 :</span>
+          <input type="text" name="message" />
+        </div>
+        <button class="addBtn">추가</button>
+      </div>
+      <div class="alarmListWrap">
+        <h1>알람목록</h1>
+        <div class="alarmList"></div>
+      </div>
+      <div class="activeListWrap">
+        <h1>메시지</h1>
+        <div class="activeList"></div>
+      </div>
+    </div>
+  </body>
+  <script src="./dist/bundle.js"></script>
+</html>
