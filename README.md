@@ -1,4 +1,4 @@
-# 김관_알람
+# JS 로 구현하는 SPA 기능
 
 Directory
 |- dist
